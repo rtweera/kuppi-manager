@@ -7,6 +7,25 @@ import {
 import Main from "./pages/Main";
 import { useEffect } from "react";
 
+/**
+ * App Component
+ * 
+ * Root component of the application. Manages routing and handles global navigation effects
+ * such as scrolling to the top on route changes and updating page metadata.
+ * 
+ * @component
+ * @example
+ * ```tsx
+ * <App />
+ * ```
+ * 
+ * @returns {JSX.Element} The main application routing structure
+ * 
+ * Features:
+ * - Client-side routing using React Router v6
+ * - Automatic scroll-to-top on navigation (except for POP navigation)
+ * - Dynamic page title and meta description updates based on route
+ */
 function App() {
   const action = useNavigationType();
   const location = useLocation();

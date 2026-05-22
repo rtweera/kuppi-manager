@@ -1,16 +1,45 @@
 import { FunctionComponent, useMemo, type CSSProperties } from "react";
 
+/**
+ * Props for the LeadershipCard component
+ */
 type LeadershipCardType = {
+  /** The title or name of the event/workshop */
   componentText?: string;
+  /** When the event is scheduled (e.g., "Tomorrow", "Monday", "Next week") */
   scheduleDate?: string;
+  /** The time slot for the event (e.g., "10.00 AM", "1.30 PM") */
   timeSlotLabel?: string;
+  /** The full date of the event (e.g., "Sep 30, 2023") */
   eventDate?: string;
+  /** Path to the vector icon image for the event */
   vectorImageName?: string;
 
-  /** Style props */
+  /** Optional custom width for the schedule date text */
   propWidth?: CSSProperties["width"];
 };
 
+/**
+ * LeadershipCard Component
+ * 
+ * A reusable card component for displaying event/workshop summaries in a list format.
+ * Each card shows the event title, scheduled date, time, full date, and an icon.
+ * 
+ * @component
+ * @example
+ * ```tsx
+ * <LeadershipCard
+ *   componentText="Leadership Qualities"
+ *   scheduleDate="Tomorrow"
+ *   timeSlotLabel="10.00 AM"
+ *   eventDate="Sep 30, 2023"
+ *   vectorImageName="/vector-5.svg"
+ * />
+ * ```
+ * 
+ * @param {LeadershipCardType} props - Component props
+ * @returns {JSX.Element} A styled event card component with event information
+ */
 const LeadershipCard: FunctionComponent<LeadershipCardType> = ({
   componentText,
   scheduleDate,
