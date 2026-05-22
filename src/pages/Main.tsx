@@ -3,6 +3,21 @@ import Header from "../components/Header";
 import SearchContainer from "../components/SearchContainer";
 import LeadershipCard from "../components/LeadershipCard";
 
+/**
+ * Main Page Component
+ * 
+ * The primary page of the application displaying the event discovery interface.
+ * Includes the application header, a featured event in the search container,
+ * and a list of upcoming events displayed as leadership cards.
+ * 
+ * @component
+ * @example
+ * ```tsx
+ * <Main />
+ * ```
+ * 
+ * @returns {JSX.Element} The main event discovery page with header, featured event, and event list
+ */
 const Main: FunctionComponent = () => {
   return (
     <div className="relative bg-white w-full h-[844px] overflow-hidden flex flex-col items-center justify-start gap-[15px]">

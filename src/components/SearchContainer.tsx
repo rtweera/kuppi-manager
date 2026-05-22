@@ -1,5 +1,34 @@
 import { FunctionComponent } from "react";
 
+/**
+ * SearchContainer Component
+ * 
+ * Displays detailed information about a featured or selected event/workshop.
+ * Shows event title, instructor, module information, timing, meeting link,
+ * and action buttons for sharing and calendar integration.
+ * 
+ * @component
+ * @example
+ * ```tsx
+ * <SearchContainer />
+ * ```
+ * 
+ * @returns {JSX.Element} A container component displaying comprehensive event details
+ * 
+ * @note Currently displays hardcoded event data. In future, accept props for dynamic content:
+ * ```typescript
+ * type SearchContainerProps = {
+ *   title?: string;
+ *   instructor?: string;
+ *   module?: string;
+ *   date?: string;
+ *   time?: string;
+ *   zoomLink?: string;
+ *   onShare?: () => void;
+ *   onAddCalendar?: () => void;
+ * };
+ * ```
+ */
 const SearchContainer: FunctionComponent = () => {
   return (
     <div className="relative w-[350px] h-[280px] text-left text-sm text-black font-inter">

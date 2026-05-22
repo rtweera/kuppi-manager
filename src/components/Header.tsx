@@ -2,6 +2,20 @@ import { FunctionComponent } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Button } from "react-bootstrap";
 
+/**
+ * Header Component
+ * 
+ * Displays the application header with a search bar and navigation controls.
+ * Includes a menu button, search input field, and user profile icon placeholder.
+ * 
+ * @component
+ * @example
+ * ```tsx
+ * <Header />
+ * ```
+ * 
+ * @returns {JSX.Element} A header component with search functionality and navigation
+ */
 const Header: FunctionComponent = () => {
   return (
     <div className="relative w-[390px] h-[70px] text-left text-sm text-gray-100 font-inter">
